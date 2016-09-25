@@ -1,0 +1,32 @@
+<template name="Home_login_page">
+  <div class="login-title-container">
+    <img class="login-image" src="/sprites/login-left-sprite.png">
+    <img class="login-image" src="/sprites/login-right-sprite.png">
+    <h1 class="ui centered header">dakcer</h1>
+    <h6 class="ui centered header tagline-header tagline-instruction">Use "A" and "D" or "left" and "right" to turn your dak.</h6>
+    <h5 class="ui centered header tagline-header tagline-instruction">Hold "Space" to stretch and go faster.</h5>
+    <h4 class="ui centered header tagline-header tagline-instruction">Hold "Shift" to shrink and go slower.</h4>
+    <h3 class="ui centered header tagline-header">How long can you last?</h3>
+  </div>
+  <div class="leaderboard">
+    <ol>
+      {{#each entry in scores}}
+        <li class="item"><span class="high-score">{{entry.name}}:<br><span class="entry-score">{{entry.score}} points</span></span></li>
+      {{/each}}
+    </ol>
+  </div>
+  <div class="ui middle aligned center aligned grid login-grid">
+    <div class="column login-column">
+      <form class="js-register-form ui large form">
+        <div class="field">
+          <div class="ui input">
+            <input type="text" name="username" placeholder="Name">
+          </div>
+        </div>
+        <button class="ui fluid submit black button">Play</button>
+        <div class="ui error message"></div>
+      </form>
+    </div>
+  </div>
+  <!-- <div class="ui billboard test ad" data-text="Billboard"></div> -->
+</template>
