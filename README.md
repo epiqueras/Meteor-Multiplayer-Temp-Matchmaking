@@ -1,5 +1,5 @@
 # Meteor Multiplayer Temporary Matchmaking
-Temporary accounts hack with a lobbies collection and matchmaking using the accounts package.
+Temporary accounts workaround with a lobbies collection and matchmaking using the accounts package.
 Why? I wanted to see if the Streamy Sockets package could be used to play a simple client-side 2D multiplayer game with a friend.
 <ol>
   <li>Prompts you for a name and uses it to create an account that gets deleted on disconnection.</li>
