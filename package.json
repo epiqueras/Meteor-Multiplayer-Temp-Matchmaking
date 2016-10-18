@@ -1,11 +1,23 @@
 {
-  "name": "dakcer",
+  "name": "meteor-multiplayer-temp-matchmaking",
+  "version": "1.0.0",
+  "description": "Temporary accounts workaround with a lobbies collection and matchmaking using the accounts package.",
   "private": true,
   "scripts": {
     "start": "meteor run",
     "lint": "eslint .",
     "pretest": "npm run lint --silent"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epiqueras/meteor-multiplayer-temp-matchmaking.git"
+  },
+  "author": "Enrique Piqueras",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epiqueras/meteor-multiplayer-temp-matchmaking/issues"
+  },
+  "homepage": "https://github.com/epiqueras/meteor-multiplayer-temp-matchmaking#readme",
   "dependencies": {
     "bcrypt": "^0.8.7",
     "meteor-node-stubs": "~0.2.0"
